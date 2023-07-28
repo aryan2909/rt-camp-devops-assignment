@@ -48,16 +48,16 @@ Before using the script, make sure you have Docker and Docker Compose installed 
 ## Usage
 
 1. To create a new WordPress site:
- ### python3 wp_manager.py create example.com
+ #### python3 wp_manager.py create example.com
 
 2. To start the containers for an existing WordPress site:
- ### python3 wp_manager.py start example.com
+ #### python3 wp_manager.py start example.com
 
 3. To stop the containers for an existing WordPress site:
- ### python3 wp_manager.py stop example.com 
+ #### python3 wp_manager.py stop example.com 
 
 4. To delete an existing WordPress site:
- ### python3 wp_manager.py delete example
+ #### python3 wp_manager.py delete example
 
 ## Troubleshooting
 
