@@ -1,0 +1,26 @@
+version: '3'
+services:
+  db:
+    image: mysql:latest
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example_root_password
+      MYSQL_DATABASE: example.com
+      MYSQL_USER: example.com
+      MYSQL_PASSWORD: example.com_password
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: example.com
+      WORDPRESS_DB_USER: example.com
+      WORDPRESS_DB_PASSWORD: example.com_password
+volumes:
+  db_data: {}
