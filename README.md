@@ -12,7 +12,7 @@ docker --version
 
 
 2. **Docker Compose**: Docker Compose is necessary to define and run multi-container Docker applications using the `docker-compose.yml` file. Check if Docker Compose is installed with:
-####docker-compose --version
+#### docker-compose --version
 
 ### Installing Docker
 If Docker is not installed, follow the official Docker installation guide for your operating system:
@@ -37,7 +37,7 @@ Before using the script, make sure you have Docker and Docker Compose installed 
 `git clone https://github.com/aryan2909/rt-camp-devops-assignment` 
 
 
-`cd wordpress-docker-manager`
+`cd rt-camp-devops-assignment`
 
 
 2. Make the script executable:
