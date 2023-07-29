@@ -12,7 +12,7 @@ docker --version
 
 
 2. **Docker Compose**: Docker Compose is necessary to define and run multi-container Docker applications using the `docker-compose.yml` file. Check if Docker Compose is installed with:
-docker-compose --version
+####docker-compose --version
 
 ### Installing Docker
 If Docker is not installed, follow the official Docker installation guide for your operating system:
@@ -34,30 +34,30 @@ Before using the script, make sure you have Docker and Docker Compose installed 
 
 1. Clone the repository:
 
+`git clone https://github.com/aryan2909/rt-camp-devops-assignment` 
 
-#### git clone https://github.com/aryan2909/rt-camp-devops-assignment
 
-#### cd wordpress-docker-manager
+`cd wordpress-docker-manager`
 
 
 2. Make the script executable:
 
-#### chmod +x wp_manager.py
+`chmod +x wp_manager.py`
 
 
 ## Usage
 
 1. To create a new WordPress site:
- #### python3 wp_manager.py create example.com
+` python3 wp_manager.py create example.com`
 
 2. To start the containers for an existing WordPress site:
- #### python3 wp_manager.py start example.com
+`python3 wp_manager.py start example.com`
 
 3. To stop the containers for an existing WordPress site:
- #### python3 wp_manager.py stop example.com 
+`python3 wp_manager.py stop example.com `
 
 4. To delete an existing WordPress site:
- #### python3 wp_manager.py delete example
+`python3 wp_manager.py delete example`
 
 ## WordPress Site Access
 
